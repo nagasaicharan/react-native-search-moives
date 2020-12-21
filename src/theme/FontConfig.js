@@ -1,7 +1,7 @@
 import {Platform} from 'react-native';
 const isIOS = Platform.OS === 'ios';
 export const fontConfig = {
-  default: {
+  ProximaNova: {
     regular: {
       fontFamily: 'ProximaNova-Regular',
       fontWeight: 'normal',

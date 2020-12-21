@@ -11,7 +11,7 @@ export default (state = INITIAL_STATE, action) => {
   const {movie = {}, removeMovieId = ''} = action;
   const {imdbID} = movie;
   switch (action.type) {
-    case shortlistReducerTypes.SET_TOKEN:
+    case shortlistReducerTypes.ADD_MOVIE:
       return {
         ...state,
         shortlistedMovies: {...state.shortlistedMovies, [imdbID]: movie},
